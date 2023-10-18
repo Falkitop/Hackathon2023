@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Postbank Extension",
+  "version": "1.0",
+
+  "description": "Shopübergreifender Einkaufswagen und Statistik des Kontos",
+
+  "icons": {
+    "48": "assets/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["src/index.js"]
+    }
+  ]
+}
